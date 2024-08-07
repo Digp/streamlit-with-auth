@@ -20,7 +20,7 @@ help: ## Print help
 	@echo ""
 
 virtualenv: ## Create virtual env
-	if [ ! -d venv ]; then python -m venv venv; fi
+	if [ ! -d venv ]; then python3.11 -m venv venv; fi
 	pip install -r requirements.txt
 
 run: ## Run app
